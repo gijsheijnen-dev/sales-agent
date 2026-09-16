@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "Read",
+      "Bash(.venv/bin/python *)",
+      "Bash(/var/www/projects/sales-agent/.venv/bin/python *)",
+      "WebSearch",
+      "WebFetch"
+    ],
+    "deny": [
+      "Read(./credentials/**)",
+      "Bash(git push *)",
+      "Bash(curl *)",
+      "Bash(wget *)",
+      "Bash(sendmail *)",
+      "Bash(mail *)",
+      "WebFetch(domain:linkedin.com)",
+      "WebFetch(domain:www.linkedin.com)"
+    ]
+  }
+}
